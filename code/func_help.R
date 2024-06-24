@@ -140,6 +140,15 @@ warp <- function(x, # vector, source distribution - old quantiles
   return(warped)
 }
 
+# # Test
+# warped <- warp(x = dat_f$Amount, y = dat_m$Amount)
+# warped_1to5 <-
+#   warp(x = dat_f$Amount, y = dat_m$Amount, dat_f$Amount[1:5])
+# warped[1:5]
+# warped_1to5
+# #sum(dat_f_2a$Amount != warped)
+# # => works
+
 warp_model <- function(dat_x,
                        model_x,
                        model_y
